@@ -11,10 +11,10 @@ function App() {
       <Router>
         <Header />
         <Routes>
-          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/account" element={<Account />} />
-          <Route path="/credit" element={<Credit />} />
           <Route path="/cash" element={<Cash />} />
+          <Route path="/credit" element={<Credit />} />
         </Routes>
       </Router>
       <Footer />
