@@ -13,8 +13,8 @@ function Credit() {
   const handleAddFunds = (e) => {
     e.preventDefault();
     const amount = parseInt(addFunds);
-    if (amount > creditLimit + creditUsed) {
-      setError('above credit limit');
+    if (creditUsed + amount > creditLimit) {
+      setError('Above credit limit');
       return;
     }
     const newBalance = creditUsed + amount;

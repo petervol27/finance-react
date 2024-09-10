@@ -21,7 +21,7 @@ function Cash() {
     e.preventDefault();
     const funds = parseInt(removeFunds);
     if (funds > currentCash) {
-      setError('Please enter a valid amount to add.');
+      setError('Cannot remove more than available');
       return;
     }
     const newBalance = currentCash - funds;
