@@ -6,7 +6,7 @@ function Header() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary ">
       <Container fluid>
-        <Navbar.Brand as={Link} to={'/'}>
+        <Navbar.Brand as={Link} to={'/home'}>
           Finance
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
